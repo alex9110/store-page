@@ -1,0 +1,34 @@
+.main-nav{
+  background-color: #777777;
+}
+.main-nav__box{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.main-nav__list{
+  display: inline-block;
+  text-align: left;
+  line-height: 1;
+}
+.main-nav_item{
+  border-right: 1px solid #fff;
+  display: inline-block;
+  font-size: 30px;
+  color: #fff;
+  padding: 0 20px;
+  &:last-child{
+    border-right: none;
+  }
+  a{
+    display: block;
+    &:hover{
+      border-bottom: 1px solid #fff;
+    }
+  }
+}
+@media (max-width: 999px){
+  .main-nav_item{
+    font-size: 20px;
+  }
+}

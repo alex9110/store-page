@@ -1,0 +1,59 @@
+@font-face{
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i&subset=cyrillic');
+}
+
+.header{
+  background-color: #DCDCDC;
+  
+}
+.header-box{
+  padding-top: 40px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.company{
+  margin-right: auto;
+  margin-left: 0;
+  & > *{
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.company__logo{
+  
+}
+.company__about{
+  
+}
+.company__title{
+  margin: 0;
+}
+.contacts{ 
+  margin-left: auto;
+  margin-right: 0;
+  color: $f_gr;
+  line-height: 1.15;
+  text-align: right;
+}
+.contacts-phones{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 46px;
+}
+.contacts-ather{
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 10px;
+  a{
+    border-bottom: 2px dashed $f_gr;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 999px){
+  .header-box{
+    padding: 30px 0;
+  }
+}

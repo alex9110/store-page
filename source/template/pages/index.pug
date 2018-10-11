@@ -1,0 +1,16 @@
+extends ../_template
+
+block variables
+  - var title = 'Store-page';
+
+block content
+  - var path = './img/';
+  .content-top
+    include ../common/header 
+    include ../common/menu 
+    include ../common/slider 
+    include ../common/content
+  .content-bottom
+    include ../common/footer
+    include ../common/feedback
+    include ../common/preloader

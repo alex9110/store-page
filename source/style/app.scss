@@ -1,0 +1,137 @@
+@import'./common/imports/fonts.scss';
+
+$ln: 1px solid #ccc;
+
+$f_gr: #767676;
+
+*, *::before, *::after { 
+  box-sizing: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  
+}
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+  position: relative;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 22px;
+  color: $f_gr;
+}
+
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+#sprite-container{
+  display: none !important;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li{
+    margin: 0;
+    padding: 0;
+  }
+}
+body {
+  margin: 0;
+  height: 100vh;
+}
+a{
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  &:visited, &:hover, &:active{
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+//для избавления от висячих предлогов
+.dib.dib.dib{
+  display: inline-block;
+  color: inherit;
+  font-size: inherit;
+}
+
+.wrapper{
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: space-between;
+}
+.content-top, .content-bottom{
+
+}
+.section{
+  position: relative;
+  width: 100%;
+}
+.section__box{
+  // outline: $ln;
+  max-width: 1000px;
+  padding: 0 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.icon{
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  svg{
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+
+
+@import './common/header';
+@import './common/menu';
+@import './common/slider';
+@import './common/content';
+@import './common/left-block';
+@import './common/center-block';
+@import './common/footer';
+@import './common/feedback';
+@import './common/preloader';
+
+
+@media (max-width: 999px) {
+  .section__box{
+     max-width: 748px;
+  }
+  .section-title{
+    h2{
+     font-size: 32px;
+    }
+  }
+
+  
+}
+
+@media (max-width: 767px) {
+  .section__box{
+     max-width: 480px;
+  }
+}
+@media (max-width: 479px) {
+  .section__box{
+     max-width: 320px;
+  }
+
+}

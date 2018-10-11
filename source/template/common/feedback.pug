@@ -1,0 +1,19 @@
+.feedback
+  .feedback__box
+    .feedback-form__box
+      span.feedback-close#feedback-close
+      .feedback-form
+        .feedback-form__title
+          h2 Обратная Связь
+        form(action="")
+          label(for="feedback-name") Ваше имя *
+            input(type="text", name="feedback-name", id="feedback-name", required).feedback-form__input
+          label(for="feedback-phone") Ваш телефон *
+            input(type="number", name="feedback-phone", id="feedback-phone", required).feedback-form__input
+          label(for="feedback-email") Email *
+            input(type="email", name="feedback-email", id="feedback-email", required, value="Поле обязательно для заполнения").feedback-form__input.feedback-form__input_error
+          label(for="feedback-text") Сообщение
+            textarea(name="feedback-text", cols="30", rows="10", id="feedback-text", required).feedback-form__input
+          button(type="submit").feedback-form__button Отправить
+
+
