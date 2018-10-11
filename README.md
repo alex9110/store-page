@@ -1,5 +1,3 @@
-# my_builder
-
 Getting started:
 
 1. clone this repo
